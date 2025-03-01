@@ -26,8 +26,11 @@ android {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("com.facebook.android:facebook-android-sdk:17.0.2")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("com.datadoghq:dd-sdk-android-core:2.18.0")
+    implementation("com.datadoghq:dd-sdk-android-logs:2.18.0")
+    implementation("com.datadoghq:dd-sdk-android-rum:2.18.0")
+    implementation("com.datadoghq:dd-sdk-android-ndk:2.18.0")
 }
 
