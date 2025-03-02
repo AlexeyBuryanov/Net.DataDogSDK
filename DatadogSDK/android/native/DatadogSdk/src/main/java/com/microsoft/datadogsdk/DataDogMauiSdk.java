@@ -1,4 +1,4 @@
-package com.microsoft.mauifacebook;
+package com.microsoft.datadogsdk;
 
 import android.content.Context;
 
@@ -9,7 +9,7 @@ import com.datadog.android.privacy.TrackingConsent;
 import com.datadog.android.rum.Rum;
 import com.datadog.android.rum.RumConfiguration;
 
-public class DataDogSdk {
+public class DataDogMauiSdk {
     public static void init(Context context, String clientToken, String envName, String appVariantName) {
         Configuration configuration = new Configuration.Builder(clientToken, envName, appVariantName).build();
         Datadog.initialize(context, configuration, TrackingConsent.GRANTED);

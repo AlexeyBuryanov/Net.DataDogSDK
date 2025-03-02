@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MauiFacebook"
-include(":mauifacebook")
+rootProject.name = "DatadogSdk"
+include(":DatadogSdk")

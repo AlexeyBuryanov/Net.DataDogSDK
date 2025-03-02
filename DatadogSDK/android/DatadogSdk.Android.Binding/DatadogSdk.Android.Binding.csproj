@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <AndroidGradleProject Include="../native/build.gradle.kts" >
-      <ModuleName>mauifacebook</ModuleName>
+      <ModuleName>DatadogSdk</ModuleName>
     </AndroidGradleProject>
   </ItemGroup>
 
