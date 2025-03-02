@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsTrimmable>true</IsTrimmable>
-    <RootNamespace>Facebook</RootNamespace>
+    <RootNamespace>DatadogSdk</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
