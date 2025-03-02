@@ -39,6 +39,9 @@ jobs:
       - name: Pack Android
         run: dotnet pack ${{ github.workspace }}/DatadogSDK/android/DatadogSdk.Android.Binding/DatadogSdk.Android.Binding.csproj --configuration Release --output ${{ github.workspace }}/packages
 
+      - name: Xcode select
+        run: sudo xcode-select -switch /Applications/Xcode_16.2.app/Contents/Developer
+        
       - name: Restore iOS
         run: dotnet restore ${{ github.workspace }}/DatadogSDK/macios/DatadogSdk.MaciOS.Binding/DatadogSdk.MaciOS.Binding.csproj
 
