@@ -1,0 +1,45 @@
+<Project>
+
+  <PropertyGroup>
+    <NetVersion>net9.0</NetVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsTrimmable>true</IsTrimmable>
+    <AssemblyVersion>1.0.0-beta</AssemblyVersion>
+    <FileVersion>1.0.0-beta</FileVersion>
+    <Version>1.0.0-beta</Version>
+    <PackageVersion>1.0.0-beta</PackageVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageProjectUrl>https://github.com/AlexeyBuryanov/Net.DataDogSDK</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AlexeyBuryanov/Net.DataDogSDK</RepositoryUrl>
+    <Description>Datadog SDK for .NET (Compatible with C#, .NET Android, and .NET iOS)</Description>
+    <Authors>Oleksii Burianov</Authors>
+    <Owners>Oleksii Burianov</Owners>
+    <Copyright>© Oleksii Burianov.</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>datadog; real-user-monitoring</PackageTags>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="..\..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
