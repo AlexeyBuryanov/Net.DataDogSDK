@@ -5,10 +5,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsTrimmable>true</IsTrimmable>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
-    <FileVersion>1.0.0.1</FileVersion>
-    <Version>1.0.0.1-beta</Version>
-    <PackageVersion>1.0.0.1-beta</PackageVersion>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
+    <Version>1.0.0.2-beta</Version>
+    <PackageVersion>1.0.0.2-beta</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup>
