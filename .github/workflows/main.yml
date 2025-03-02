@@ -21,7 +21,7 @@ jobs:
         with:
           dotnet-version: '9.x'
 
-      - name: Install .NET Android workloads
+      - name: Install .NET workloads
         run: |
           dotnet nuget locals all --clear
           dotnet workload install maui-android
@@ -30,6 +30,9 @@ jobs:
       - name: Restore Android
         run: dotnet restore ${{ github.workspace }}/DatadogSDK/android/DatadogSdk.Android.Binding/DatadogSdk.Android.Binding.csproj
 
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+        
       - name: Build Android
         run: dotnet build ${{ github.workspace }}/DatadogSDK/android/DatadogSdk.Android.Binding/DatadogSdk.Android.Binding.csproj --configuration Release --no-restore
 
