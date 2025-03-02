@@ -1,1 +1,3 @@
-# Net.Android.DataDogSDK
+# Datadog SDK for .NET
+
+Compatible with C#, .NET Android, and .NET iOS
