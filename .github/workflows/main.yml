@@ -31,7 +31,7 @@ jobs:
         run: dotnet restore ${{ github.workspace }}/DatadogSDK/android/DatadogSdk.Android.Binding/DatadogSdk.Android.Binding.csproj
 
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x ${{ github.workspace }}/DatadogSDK/android/native/gradlew
         
       - name: Build Android
         run: dotnet build ${{ github.workspace }}/DatadogSDK/android/DatadogSdk.Android.Binding/DatadogSdk.Android.Binding.csproj --configuration Release --no-restore
