@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		643C24B32B99104200C2A6AA /* MauiFacebook.h in Headers */ = {isa = PBXBuildFile; fileRef = 643C24B22B99104200C2A6AA /* MauiFacebook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		646787CA2B99125200677775 /* MauiFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646787C92B99125200677775 /* MauiFacebook.swift */; };
-		D0AF2A9B2BDC4E5B002AA03E /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = D0AF2A9A2BDC4E5B002AA03E /* FacebookBasics */; };
-		D0AF2A9D2BDC4E5B002AA03E /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = D0AF2A9C2BDC4E5B002AA03E /* FacebookCore */; };
+		DE49072D2D7460E500149E6E /* DatadogCore in Frameworks */ = {isa = PBXBuildFile; productRef = DE49072C2D7460E500149E6E /* DatadogCore */; };
+		DE49072F2D7460E900149E6E /* DatadogCrashReporting in Frameworks */ = {isa = PBXBuildFile; productRef = DE49072E2D7460E900149E6E /* DatadogCrashReporting */; };
+		DE4907312D7460EF00149E6E /* DatadogLogs in Frameworks */ = {isa = PBXBuildFile; productRef = DE4907302D7460EF00149E6E /* DatadogLogs */; };
+		DE4907332D7460F300149E6E /* DatadogObjc in Frameworks */ = {isa = PBXBuildFile; productRef = DE4907322D7460F300149E6E /* DatadogObjc */; };
+		DE4907352D7460F500149E6E /* DatadogRUM in Frameworks */ = {isa = PBXBuildFile; productRef = DE4907342D7460F500149E6E /* DatadogRUM */; };
+		DE4907372D7460F900149E6E /* DatadogSessionReplay in Frameworks */ = {isa = PBXBuildFile; productRef = DE4907362D7460F900149E6E /* DatadogSessionReplay */; };
+		DE4907392D7460FC00149E6E /* DatadogTrace in Frameworks */ = {isa = PBXBuildFile; productRef = DE4907382D7460FC00149E6E /* DatadogTrace */; };
+		DE49073B2D7460FF00149E6E /* DatadogWebViewTracking in Frameworks */ = {isa = PBXBuildFile; productRef = DE49073A2D7460FF00149E6E /* DatadogWebViewTracking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +34,6 @@
 /* Begin PBXFileReference section */
 		643C24AF2B99104200C2A6AA /* MauiFacebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MauiFacebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643C24B22B99104200C2A6AA /* MauiFacebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MauiFacebook.h; sourceTree = "<group>"; };
-		646787C92B99125200677775 /* MauiFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MauiFacebook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,8 +41,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0AF2A9B2BDC4E5B002AA03E /* FacebookBasics in Frameworks */,
-				D0AF2A9D2BDC4E5B002AA03E /* FacebookCore in Frameworks */,
+				DE49072F2D7460E900149E6E /* DatadogCrashReporting in Frameworks */,
+				DE4907372D7460F900149E6E /* DatadogSessionReplay in Frameworks */,
+				DE4907352D7460F500149E6E /* DatadogRUM in Frameworks */,
+				DE4907332D7460F300149E6E /* DatadogObjc in Frameworks */,
+				DE4907312D7460EF00149E6E /* DatadogLogs in Frameworks */,
+				DE49072D2D7460E500149E6E /* DatadogCore in Frameworks */,
+				DE49073B2D7460FF00149E6E /* DatadogWebViewTracking in Frameworks */,
+				DE4907392D7460FC00149E6E /* DatadogTrace in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				643C24B22B99104200C2A6AA /* MauiFacebook.h */,
-				646787C92B99125200677775 /* MauiFacebook.swift */,
 			);
 			path = MauiFacebook;
 			sourceTree = "<group>";
@@ -108,8 +117,14 @@
 			);
 			name = MauiFacebook;
 			packageProductDependencies = (
-				D0AF2A9A2BDC4E5B002AA03E /* FacebookBasics */,
-				D0AF2A9C2BDC4E5B002AA03E /* FacebookCore */,
+				DE49072C2D7460E500149E6E /* DatadogCore */,
+				DE49072E2D7460E900149E6E /* DatadogCrashReporting */,
+				DE4907302D7460EF00149E6E /* DatadogLogs */,
+				DE4907322D7460F300149E6E /* DatadogObjc */,
+				DE4907342D7460F500149E6E /* DatadogRUM */,
+				DE4907362D7460F900149E6E /* DatadogSessionReplay */,
+				DE4907382D7460FC00149E6E /* DatadogTrace */,
+				DE49073A2D7460FF00149E6E /* DatadogWebViewTracking */,
 			);
 			productName = MauiFacebook;
 			productReference = 643C24AF2B99104200C2A6AA /* MauiFacebook.framework */;
@@ -140,7 +155,7 @@
 			);
 			mainGroup = 643C24A52B99104200C2A6AA;
 			packageReferences = (
-				D0AF2A992BDC4E5B002AA03E /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */,
 			);
 			productRefGroup = 643C24B02B99104200C2A6AA /* Products */;
 			projectDirPath = "";
@@ -166,7 +181,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646787CA2B99125200677775 /* MauiFacebook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,26 +414,56 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D0AF2A992BDC4E5B002AA03E /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+		DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			repositoryURL = "https://github.com/DataDog/dd-sdk-ios.git";
 			requirement = {
-				kind = exactVersion;
-				version = 16.3.1;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.23.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D0AF2A9A2BDC4E5B002AA03E /* FacebookBasics */ = {
+		DE49072C2D7460E500149E6E /* DatadogCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D0AF2A992BDC4E5B002AA03E /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookBasics;
+			package = DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogCore;
 		};
-		D0AF2A9C2BDC4E5B002AA03E /* FacebookCore */ = {
+		DE49072E2D7460E900149E6E /* DatadogCrashReporting */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D0AF2A992BDC4E5B002AA03E /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookCore;
+			package = DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogCrashReporting;
+		};
+		DE4907302D7460EF00149E6E /* DatadogLogs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogLogs;
+		};
+		DE4907322D7460F300149E6E /* DatadogObjc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogObjc;
+		};
+		DE4907342D7460F500149E6E /* DatadogRUM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogRUM;
+		};
+		DE4907362D7460F900149E6E /* DatadogSessionReplay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogSessionReplay;
+		};
+		DE4907382D7460FC00149E6E /* DatadogTrace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogTrace;
+		};
+		DE49073A2D7460FF00149E6E /* DatadogWebViewTracking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE49072B2D7460C100149E6E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogWebViewTracking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
