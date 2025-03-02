@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		643C24B32B99104200C2A6AA /* MauiFacebook.h in Headers */ = {isa = PBXBuildFile; fileRef = 643C24B22B99104200C2A6AA /* MauiFacebook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		643C24B32B99104200C2A6AA /* DataDogSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 643C24B22B99104200C2A6AA /* DataDogSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE49072D2D7460E500149E6E /* DatadogCore in Frameworks */ = {isa = PBXBuildFile; productRef = DE49072C2D7460E500149E6E /* DatadogCore */; };
 		DE49072F2D7460E900149E6E /* DatadogCrashReporting in Frameworks */ = {isa = PBXBuildFile; productRef = DE49072E2D7460E900149E6E /* DatadogCrashReporting */; };
 		DE4907312D7460EF00149E6E /* DatadogLogs in Frameworks */ = {isa = PBXBuildFile; productRef = DE4907302D7460EF00149E6E /* DatadogLogs */; };
@@ -32,8 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		643C24AF2B99104200C2A6AA /* MauiFacebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MauiFacebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		643C24B22B99104200C2A6AA /* MauiFacebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MauiFacebook.h; sourceTree = "<group>"; };
+		643C24AF2B99104200C2A6AA /* DataDogSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataDogSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643C24B22B99104200C2A6AA /* DataDogSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDogSdk.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		643C24A52B99104200C2A6AA = {
 			isa = PBXGroup;
 			children = (
-				643C24B12B99104200C2A6AA /* MauiFacebook */,
+				643C24B12B99104200C2A6AA /* DataDogSdk */,
 				643C24B02B99104200C2A6AA /* Products */,
 				643C24B92B99121700C2A6AA /* Frameworks */,
 			);
@@ -67,17 +67,17 @@
 		643C24B02B99104200C2A6AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				643C24AF2B99104200C2A6AA /* MauiFacebook.framework */,
+				643C24AF2B99104200C2A6AA /* DataDogSdk.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		643C24B12B99104200C2A6AA /* MauiFacebook */ = {
+		643C24B12B99104200C2A6AA /* DataDogSdk */ = {
 			isa = PBXGroup;
 			children = (
-				643C24B22B99104200C2A6AA /* MauiFacebook.h */,
+				643C24B22B99104200C2A6AA /* DataDogSdk.h */,
 			);
-			path = MauiFacebook;
+			path = DataDogSdk;
 			sourceTree = "<group>";
 		};
 		643C24B92B99121700C2A6AA /* Frameworks */ = {
@@ -94,16 +94,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				643C24B32B99104200C2A6AA /* MauiFacebook.h in Headers */,
+				643C24B32B99104200C2A6AA /* DataDogSdk.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		643C24AE2B99104200C2A6AA /* MauiFacebook */ = {
+		643C24AE2B99104200C2A6AA /* DataDogSdk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 643C24B62B99104200C2A6AA /* Build configuration list for PBXNativeTarget "MauiFacebook" */;
+			buildConfigurationList = 643C24B62B99104200C2A6AA /* Build configuration list for PBXNativeTarget "DataDogSdk" */;
 			buildPhases = (
 				643C24AA2B99104200C2A6AA /* Headers */,
 				643C24AB2B99104200C2A6AA /* Sources */,
@@ -115,7 +115,7 @@
 			);
 			dependencies = (
 			);
-			name = MauiFacebook;
+			name = DataDogSdk;
 			packageProductDependencies = (
 				DE49072C2D7460E500149E6E /* DatadogCore */,
 				DE49072E2D7460E900149E6E /* DatadogCrashReporting */,
@@ -127,7 +127,7 @@
 				DE49073A2D7460FF00149E6E /* DatadogWebViewTracking */,
 			);
 			productName = MauiFacebook;
-			productReference = 643C24AF2B99104200C2A6AA /* MauiFacebook.framework */;
+			productReference = 643C24AF2B99104200C2A6AA /* DataDogSdk.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					643C24AE2B99104200C2A6AA = {
 						CreatedOnToolsVersion = 15.2;
@@ -145,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 643C24A92B99104200C2A6AA /* Build configuration list for PBXProject "MauiFacebook" */;
+			buildConfigurationList = 643C24A92B99104200C2A6AA /* Build configuration list for PBXProject "DataDogSdk" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -161,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				643C24AE2B99104200C2A6AA /* MauiFacebook */,
+				643C24AE2B99104200C2A6AA /* DataDogSdk */,
 			);
 		};
 /* End PBXProject section */
@@ -222,6 +222,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -286,6 +287,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -314,6 +316,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -356,6 +359,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -393,7 +397,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		643C24A92B99104200C2A6AA /* Build configuration list for PBXProject "MauiFacebook" */ = {
+		643C24A92B99104200C2A6AA /* Build configuration list for PBXProject "DataDogSdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				643C24B42B99104200C2A6AA /* Debug */,
@@ -402,7 +406,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		643C24B62B99104200C2A6AA /* Build configuration list for PBXNativeTarget "MauiFacebook" */ = {
+		643C24B62B99104200C2A6AA /* Build configuration list for PBXNativeTarget "DataDogSdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				643C24B72B99104200C2A6AA /* Debug */,

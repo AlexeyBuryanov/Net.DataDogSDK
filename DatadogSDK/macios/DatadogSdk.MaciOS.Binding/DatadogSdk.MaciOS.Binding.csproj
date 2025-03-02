@@ -10,8 +10,8 @@
 
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinitions.cs"/>
-    <XcodeProject Include="../native/MauiFacebook.xcodeproj">
-      <SchemeName>MauiFacebook</SchemeName>
+    <XcodeProject Include="../native/DataDogSdk.xcodeproj">
+      <SchemeName>DataDogSdk</SchemeName>
     </XcodeProject>
   </ItemGroup>
 
