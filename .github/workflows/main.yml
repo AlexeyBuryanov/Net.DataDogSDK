@@ -41,6 +41,9 @@ jobs:
 
       - name: Xcode select
         run: sudo xcode-select -switch /Applications/Xcode_16.2.app/Contents/Developer
+
+      - name: Install iOS platform (temp fix)
+        run: xcodebuild -downloadPlatform iOS -buildVersion 18.2
         
       - name: Restore iOS
         run: dotnet restore ${{ github.workspace }}/DatadogSDK/macios/DatadogSdk.MaciOS.Binding/DatadogSdk.MaciOS.Binding.csproj
